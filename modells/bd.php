@@ -1,7 +1,7 @@
 <?php
 
 // se incluye el archivo que contiene los datos de la conexion
-// include_once "config/config.php";
+include_once "config/config.php";
 include_once "../config/config.php";
 
 class conexion { 

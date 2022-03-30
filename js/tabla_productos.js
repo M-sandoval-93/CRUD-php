@@ -10,7 +10,7 @@ $(document).ready(function() {
             {"data": "id_producto"},
             {"data": "nombre"},
             {"data": "descripcion"},
-            {"data": "id_categoria"},
+            {"data": "descripcion_categoria"},
             {"data": "cantidad"},
             {"defaultContent": 
                 `<button class="editar btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal_productos">Editar <i class="fas fa-pencil-alt"></i></button>
@@ -18,6 +18,18 @@ $(document).ready(function() {
         ],
         "language": spanish
     });
+
+
+    // Preparar modal para agregar nuevo producto
+    $("#btn_nuevo_producto").click(function () {
+        $("#datos_nuevo_producto").trigger("reset");
+        $("#m_accion").val("nuevo_producto");
+        $(".titulo").text("Agregar nuevo producto");
+        $("#head").addClass("bg-primary");
+    });
+
+
+
 }); 
 
 
@@ -36,7 +48,3 @@ let spanish = {
     },
     "sProcessing": "Procesando..."
 }
-
-// $(document).ready(function() {
-//     $("#mis_productos").DataTable();
-// });
