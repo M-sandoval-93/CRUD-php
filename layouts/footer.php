@@ -48,7 +48,7 @@
     <script src="pluggins/DataTables/datatables.min.js"></script>
     <script src="pluggins/sweetalert2/sweetalert2.all.min.js"></script>
 
-    <script src="js/tabla_productos.js"></script>
+    <script src="js/controller/tabla_productos.js"></script>
 
     <!-- Custom scripts for all pages -->
     <script src="js/sb-admin-2.min.js"></script>
