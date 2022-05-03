@@ -17,7 +17,6 @@ if (isset($_SESSION['usser'])) {
     include_once "views/login.php";
 }
 
-// prueba de contenido
 
 
 ?>
